@@ -31,12 +31,6 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      # Configure Git identity
-      - name: Configure Git
-        run: |
-          git config --global user.name "balajee-rm"
-          git config --global user.email "balajee.rm@gmail.com"
-
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         env:
